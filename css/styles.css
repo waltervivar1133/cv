@@ -21002,3 +21002,9 @@ section {
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
+.img-sobre-mi{
+  background-image: url(../assets/img/sobremi.jpg);
+}
+.img-proyectos{
+  background-image: url(../assets/img/proyecto.jpg);
+}
