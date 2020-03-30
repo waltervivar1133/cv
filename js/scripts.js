@@ -1,31 +1,27 @@
-/*!
-    * Start Bootstrap - SB UI Pro v1.0.1 (https://shop.startbootstrap.com/product/sb-ui-pro)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under SEE_LICENSE (https://github.com/BlackrockDigital/sb-ui-pro/blob/master/LICENSE)
-    */
+
     (function($) {
     "use strict";
 
-    // Enable Bootstrap tooltips via data-attributes globally
+    //  habilitarBootstrap tooltips 
     $('[data-toggle="tooltip"]').tooltip();
 
-    // Enable Bootstrap popovers via data-attributes globally
+    // Habilitar Bootstrap popovers 
     $('[data-toggle="popover"]').popover();
 
     $(".popover-dismiss").popover({
         trigger: "focus"
     });
 
-    // Activate Feather icons
+    // Activar Feather icons
     feather.replace();
 
-    // Activate Bootstrap scrollspy for the sticky nav component
+    // Activar Bootstrap
     $("body").scrollspy({
         target: "#stickyNav",
         offset: 82
     });
 
-    // Scrolls to an offset anchor when a sticky nav link is clicked
+    // scroll href
     $('.nav-sticky a.nav-link[href*="#"]:not([href="#"])').click(function() {
         if (
             location.pathname.replace(/^\//, "") ==
@@ -45,8 +41,7 @@
         }
     });
 
-    // Collapse Navbar
-    // Add styling fallback for when a transparent background .navbar-marketing is scrolled
+
     var navbarCollapse = function() {
         if($(".navbar-marketing.bg-transparent.fixed-top").length === 0) {
             return;
@@ -57,9 +52,9 @@
             $(".navbar-marketing").removeClass("navbar-scrolled");
         }
     };
-    // Collapse now if page is not at top
+    
     navbarCollapse();
-    // Collapse the navbar when page is scrolled
+
     $(window).scroll(navbarCollapse);
 
 })(jQuery);
